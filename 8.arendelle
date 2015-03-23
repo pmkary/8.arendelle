@@ -1,0 +1,75 @@
+
+//
+// M A G I C   8   B A L L
+// (c) Copyright 2015 Pouya Kary <k@arendelle.org>
+// (c) Copyright 2015 Alireza Ahmadian
+//
+
+
+( ball , floor( #rnd * 21 ) )
+
+
+{ @ball = 0 , "It is certin" }
+
+{ @ball = 1 , "It is decidedly so" }
+
+{ @ball = 2 , "Without a doubt" }
+
+{ @ball = 3 , "Yes definitely" }
+
+{ @ball = 4 , "You may rely on it" }
+
+{ @ball = 5 , "As I see it yes" }
+
+{ @ball = 6 , "Most likely" }
+
+{ @ball = 7 , "Outlook good" }
+
+{ @ball = 8 , "Yes" }
+
+{ @ball = 9 , "Signs point to yes" }
+
+{ @ball = 10 , "Reply hazy try again" }
+
+{ @ball = 11 , "Ask again later" }
+
+{ @ball = 12 , "Better not tell you now" }
+
+{ @ball = 13 , "Cannot predict now" }
+
+{ @ball = 14 , "Concentrate and ask again" }
+
+{ @ball = 15 , "Don't count on it" }
+
+{ @ball = 16 , "My reply is no" }
+
+{ @ball = 17 , "My sources say no" }
+
+{ @ball = 18 , "Outlook not so good" }
+
+{ @ball = 19 , "Very doubtful" }
+
+{ @ball < 11  ,
+
+   [ #i / 2 - 5 , r ]
+   [ #j / 2 - 3 , d ]
+   [ 4 , prd ]
+   [ 8 , pru ]
+
+   , { @ball < 16 , 
+
+         [ #j / 2 - 1 , d ]
+         [ #i / 2 - 5 , r ]
+         [ 9 , pr ]
+
+      ,
+
+         [ #i / 2 - 5 , r ]
+         [ #j / 2 - 4 , d ]
+         [ 11 , prd ]
+         [ 12 , l ]
+         [ 11 , rup ]
+   }
+}
+
+// done
