@@ -2,7 +2,7 @@
 # Arendelle Magic 8 Ball
 I love magic 8-ball so much and I have a big collection of it. So when it's about collections why don't we have an Arendelle clone to show that writing it in Arendelle is easier than any other language!<br><br>
 
-![](http://kary.us/GitHubWideImages/8-ball/screenie.png)
+<img src="http://kary.us/GitHubWideImages/8-ball/screenie.png" width="400">
 
 <br><br>
 
